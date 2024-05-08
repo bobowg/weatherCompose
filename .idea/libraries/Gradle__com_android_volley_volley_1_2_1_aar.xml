@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.volley:volley:1.2.1@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/37a12fdc4a96e79ae41573e145417c2d/transformed/volley-1.2.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/37a12fdc4a96e79ae41573e145417c2d/transformed/volley-1.2.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/37a12fdc4a96e79ae41573e145417c2d/transformed/volley-1.2.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

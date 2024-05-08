@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.compose.ui:ui-android:1.6.7@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/771f72c74ff662da1fe8468fb8c5ceed/transformed/ui-release/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/771f72c74ff662da1fe8468fb8c5ceed/transformed/ui-release/res" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/771f72c74ff662da1fe8468fb8c5ceed/transformed/ui-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/771f72c74ff662da1fe8468fb8c5ceed/transformed/ui-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-android/1.6.7/f010bcb99ca0db43f790103aa5db3a701bcb0cba/ui-android-1.6.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
