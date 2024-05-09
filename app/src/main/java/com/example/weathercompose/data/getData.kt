@@ -114,3 +114,43 @@ fun getWeatherBy7Days(response: String): List<daily> {
     }
     return list
 }
+
+fun get24HourlyData(context: Context, daysList: MutableState<List<hourly>>) {
+    val url = "https://devapi.qweather.com/v7/weather/24h?location=" +
+            "101310218" +
+            "&key=$API_KEY"
+    val queue = Volley.newRequestQueue(context)
+    val sRequest = StringRequest(
+        Request.Method.GET,
+        url,
+        { response ->
+            val list = getWeatherBy24Hourly(response)
+            daysList.value = list
+        }, {
+            Log.d("mylog", "VolleyError:$it")
+        }
+    )
+    queue.add(sRequest)
+}
+
+fun getWeatherBy24Hourly(response: String): List<hourly> {
+    if (response.isEmpty()) return listOf()
+    val list = ArrayList<hourly>()
+    val mainObject = JSONObject(response)
+    val hourlys = mainObject.getJSONArray("hourly")
+    for (i in 0 until hourlys.length()) {
+        val item = hourlys[i] as JSONObject
+        list.add(
+            hourly(
+                fxTime = item.getString("fxTime"),
+                temp = item.getString("temp"),
+                icon = item.getString("icon"),
+                text = item.getString("text"),
+                wind360 = item.getString("wind360"),
+                windScale = item.getString("windScale"),
+                windSpeed = item.getString("windScale")
+            )
+        )
+    }
+    return list
+}

@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weathercompose.R
 import com.example.weathercompose.data.daily
+import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -146,7 +147,8 @@ fun MainCard(
 @OptIn(ExperimentalPagerApi::class, ExperimentalMaterial3Api::class)
 @Composable
 fun TabLayout(
-    daysList: MutableState<List<daily>>
+    daysList: MutableState<List<daily>>,
+    hourlyList:MutableState<List<hourly>>
 ) {
     val tabList = listOf("24小时", "7天")
     val pageState = rememberPagerState()
@@ -187,15 +189,38 @@ fun TabLayout(
             state = pageState,
             modifier = Modifier.weight(1.0f)
         ) { index ->
-            LazyColumn(modifier = Modifier.fillMaxSize()) {
-                itemsIndexed(
-                    daysList.value
-                ) { _, item ->
-                    ListItem(item)
+            when(index){
+                0 -> {
+                    LazyColumn(modifier = Modifier.fillMaxSize()) {
+                        itemsIndexed(
+                           hourlyList.value
+                        ) { _, item ->
+                            horlyList(item)
+                        }
+                    }
+                }
+                1-> {
+                    LazyColumn(modifier = Modifier.fillMaxSize()) {
+                        itemsIndexed(
+                            daysList.value
+                        ) { _, item ->
+                            dailyItem(item)
+                        }
+                    }
+                }
+                else -> {
+                    LazyColumn(modifier = Modifier.fillMaxSize()) {
+                        itemsIndexed(
+                            hourlyList.value
+                        ) { _, item ->
+                            horlyList(item)
+                        }
+                    }
                 }
             }
+
         }
     }
-
 }
+
 

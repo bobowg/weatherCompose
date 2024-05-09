@@ -12,8 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.weathercompose.data.daily
+import com.example.weathercompose.data.get24HourlyData
 import com.example.weathercompose.data.get7DaysData
 import com.example.weathercompose.data.getNowData
+import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.screen.MainCard
 import com.example.weathercompose.screen.TabLayout
@@ -28,9 +30,13 @@ class MainActivity : ComponentActivity() {
                 val daysList = remember {
                     mutableStateOf(listOf<daily>())
                 }
+                val hourlyList = remember {
+                    mutableStateOf(listOf<hourly>())
+                }
                 val nowList = remember {
                     mutableStateOf(now("", "", "", "", "", "", "", "", "", "", "", "", "", "", ""))
                 }
+                get24HourlyData(this,hourlyList)
                 get7DaysData(this, daysList)
                 getNowData(context = this, now = nowList)
                 Image(
@@ -41,7 +47,7 @@ class MainActivity : ComponentActivity() {
                 )
                 Column {
                     MainCard(nowList)
-                    TabLayout(daysList)
+                    TabLayout(daysList,hourlyList)
                 }
             }
         }

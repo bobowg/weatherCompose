@@ -23,16 +23,54 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weathercompose.R
 import com.example.weathercompose.data.daily
+import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
 
 
-
 @Composable
-fun ListItem(item:daily) {
+fun horlyList(item: hourly) {
     Card(
         modifier = Modifier
-            .fillMaxWidth().alpha(0.5f)
+            .fillMaxWidth()
+            .alpha(0.5f)
+            .padding(top = 3.dp),
+        colors = CardDefaults.cardColors(containerColor = BlueLight),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
+        shape = RoundedCornerShape(5.dp)
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Column(
+                modifier = Modifier.padding(start = 8.dp, top = 5.dp, bottom = 5.dp),
+            ) {
+                Text(text = item.fxTime)
+                Text(text = item.text , color = Color.White)
+            }
+
+            Text(text = "${item.temp}°C", color = Color.White, style = TextStyle(fontSize = 25.sp))
+            Image(
+                painter = painterResource(id = R.drawable.ic_cloud_zappy),
+                contentDescription = "晴",
+                modifier = Modifier
+                    .padding(end = 8.dp)
+                    .size(35.dp)
+            )
+
+        }
+    }
+}
+
+
+@Composable
+fun dailyItem(item:daily) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .alpha(0.5f)
             .padding(top = 3.dp),
         colors = CardDefaults.cardColors(containerColor = BlueLight),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
