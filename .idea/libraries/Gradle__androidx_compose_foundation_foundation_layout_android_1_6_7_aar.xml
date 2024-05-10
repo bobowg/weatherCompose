@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation-layout-android:1.6.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f35bb07fb1b153a576d025918ad16c4b/transformed/foundation-layout-release/res" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f35bb07fb1b153a576d025918ad16c4b/transformed/foundation-layout-release/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f35bb07fb1b153a576d025918ad16c4b/transformed/foundation-layout-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/44f3d0d0264b512471e004c0f910babc/transformed/foundation-layout-release/res" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/44f3d0d0264b512471e004c0f910babc/transformed/foundation-layout-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/44f3d0d0264b512471e004c0f910babc/transformed/foundation-layout-release/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

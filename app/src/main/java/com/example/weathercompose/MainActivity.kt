@@ -17,8 +17,8 @@ import com.example.weathercompose.data.get7DaysData
 import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
-import com.example.weathercompose.screen.MainCard
-import com.example.weathercompose.screen.TabLayout
+import com.example.weathercompose.ui.screen.MainCard
+import com.example.weathercompose.ui.screen.TabLayout
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
 
 

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity-compose:1.9.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/e85df69f39d03f15326f481cb509d495/transformed/activity-compose-1.9.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/e85df69f39d03f15326f481cb509d495/transformed/activity-compose-1.9.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/e85df69f39d03f15326f481cb509d495/transformed/activity-compose-1.9.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f964f15d78660b7d2faee32b463cffdf/transformed/activity-compose-1.9.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f964f15d78660b7d2faee32b463cffdf/transformed/activity-compose-1.9.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f964f15d78660b7d2faee32b463cffdf/transformed/activity-compose-1.9.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

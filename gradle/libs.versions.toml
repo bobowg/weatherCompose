@@ -29,6 +29,7 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-compose ={group = "io.coil-kt",name ="coil-svg",version.ref = "coil"}
 gson = { group = "com.google.code.gson", name="gson", version.ref = "gson" }
 accompanist-pager = { group = "com.google.accompanist", name = "accompanist-pager", version.ref = "accompanist" }
 accompanist-pager-indicators = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "accompanist" }

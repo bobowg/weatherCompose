@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test:annotation:1.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/7a5e01b82b5eed322aed4e6d3c7436ef/transformed/annotation-1.0.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/7a5e01b82b5eed322aed4e6d3c7436ef/transformed/annotation-1.0.1/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6912128c2b3090f7a21ef3aa8c0314a9/transformed/annotation-1.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6912128c2b3090f7a21ef3aa8c0314a9/transformed/annotation-1.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
