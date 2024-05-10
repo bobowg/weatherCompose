@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                 get7DaysData(this, daysList)
                 getNowData(context = this, now = nowList)
                 Image(
-                    painter = painterResource(id = R.drawable.cloudy_bg),
+                    painter = painterResource(id = R.drawable.sunny_bg),
                     contentDescription = "cloudy_bg",
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.FillBounds
