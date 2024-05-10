@@ -1,5 +1,6 @@
 package com.example.weathercompose.ui.screen
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,11 +29,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weathercompose.data.daily
+import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
@@ -51,9 +54,14 @@ fun MainCard(
         modifier = Modifier
             .padding(5.dp),
     ) {
+        val context = LocalContext.current
         Card(
             modifier = Modifier
                 .fillMaxWidth()
+                .padding(top = 3.dp)
+                .clickable {
+                    getNowData(context,nowList)
+                }
                 .alpha(0.6f),
             colors = CardDefaults.cardColors(containerColor = BlueLight),
             elevation = CardDefaults.cardElevation(0.dp),
@@ -78,7 +86,7 @@ fun MainCard(
                             style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold),
                             color = Color.White
                         )
-                        weatherSelectIcon(nowList.value.icon)
+                        WeatherSelectIcon(nowList.value.icon)
 
                     }
                     Text(
@@ -113,7 +121,7 @@ fun MainCard(
 
                         Text(
                             modifier = Modifier.padding(top = 8.dp),
-                            text = "感觉好像${nowList.value.feelsLike}°C 风向：${nowList.value.windDir}级别：${nowList.value.windScale}",
+                            text = "感觉好像${nowList.value.feelsLike}°C 风向：${nowList.value.windDir} ${nowList.value.windScale}级",
                             style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
                             color = Color.White
                         )

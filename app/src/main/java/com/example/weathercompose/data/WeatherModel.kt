@@ -97,6 +97,7 @@ data class hourly(
     val icon:String,
     val text:String,
     val wind360:String,
+    val windDir:String,
     val windScale:String,
     val windSpeed:String,
 )

@@ -147,8 +147,9 @@ fun getWeatherBy24Hourly(response: String): List<hourly> {
                 icon = item.getString("icon"),
                 text = item.getString("text"),
                 wind360 = item.getString("wind360"),
+                windDir = item.getString("windDir"),
                 windScale = item.getString("windScale"),
-                windSpeed = item.getString("windScale")
+                windSpeed = item.getString("windSpeed")
             )
         )
     }

@@ -1,6 +1,5 @@
 package com.example.weathercompose.ui.screen
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -16,11 +15,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.weathercompose.R
 import com.example.weathercompose.data.daily
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.ui.theme.BlueLight
@@ -46,12 +44,16 @@ fun horlyList(item: hourly) {
             Column(
                 modifier = Modifier.padding(start = 8.dp, top = 5.dp, bottom = 5.dp),
             ) {
-                Text(text = toTime(item.fxTime) , color = Color.White)
-                Text(text = item.text, color = Color.White)
+                Text(text = toTime(item.fxTime), color = Color.White)
+                Text(
+                    text = "${item.text} ${item.windDir} ${item.windScale}级 ",
+                    color = Color.White
+                )
+                Text(text = "风速：${item.windSpeed} 公里/小时", color = Color.White)
             }
 
             Text(text = "${item.temp}°C", color = Color.White, style = TextStyle(fontSize = 25.sp))
-            weatherSelectIcon(icon = item.icon)
+            WeatherSelectIcon(icon = item.icon)
 
         }
     }
@@ -59,7 +61,7 @@ fun horlyList(item: hourly) {
 
 
 @Composable
-fun     dailyItem(item: daily) {
+fun dailyItem(item: daily) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -75,18 +77,44 @@ fun     dailyItem(item: daily) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Column(
-                modifier = Modifier.padding(start = 8.dp, top = 5.dp, bottom = 5.dp),
+                modifier = Modifier
+                    .padding(start = 8.dp, top = 5.dp, bottom = 5.dp)
+                    .size(150.dp),
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
             ) {
-                Text(text = item.fxDate , color = Color.White)
-                Text(text = item.textDay, color = Color.White)
+                Text(text = item.fxDate, color = Color.White, fontSize = 15.sp)
+                Text(
+                    text = "白天:${item.textDay} 日出：${item.sunrise} 日落：${item.sunset}",
+                    color = Color.White,
+                    fontSize = 15.sp,
+                    overflow = TextOverflow.Ellipsis
+                )
+
+                Text(
+                    text = "月升：${item.moonrise} 月落：${item.moonset.ifEmpty { "未知" }}",
+                    color = Color.White,
+                    fontSize = 15.sp,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text(
+                    text = "夜晚:${item.textNight} ${item.moonPhase}",
+                    color = Color.White,
+                    fontSize = 15.sp
+                )
             }
 
             Text(
                 text = "${item.tempMax}°C/${item.tempMin}°C",
                 color = Color.White,
-                style = TextStyle(fontSize = 25.sp)
+                style = TextStyle(fontSize = 20.sp)
             )
-            weatherSelectIcon(icon = item.iconDay)
+            Column {
+                WeatherSelectIcon( icon = item.iconDay)
+                WeatherSelectIcon(icon = item.iconNight)
+            }
+
+
         }
     }
 }
