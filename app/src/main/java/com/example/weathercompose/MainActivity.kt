@@ -1,6 +1,5 @@
 package com.example.weathercompose
 
-import android.app.AlertDialog
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,10 +19,12 @@ import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.location
 import com.example.weathercompose.data.now
+import com.example.weathercompose.data.season
 import com.example.weathercompose.ui.screen.DialogSearch
 import com.example.weathercompose.ui.screen.MainCard
 import com.example.weathercompose.ui.screen.TabLayout
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
+import com.example.weathercompose.uitl.ImageReslut
 
 
 class MainActivity : ComponentActivity() {
@@ -61,14 +62,14 @@ class MainActivity : ComponentActivity() {
                             daysList = daysList,
                             id = citylist.value.id
                         )
-                    }else{
+                    } else {
                         get24HourlyData(this, hourlyList)
                         get7DaysData(this, daysList)
                         getNowData(context = this, now = nowList)
                     }
                 }
                 Image(
-                    painter = painterResource(id = R.drawable.sunny_bg),
+                    painter = painterResource(id = ImageReslut()),
                     contentDescription = "cloudy_bg",
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.FillBounds
