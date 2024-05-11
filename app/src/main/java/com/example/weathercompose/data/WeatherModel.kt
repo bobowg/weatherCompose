@@ -101,3 +101,10 @@ data class hourly(
     val windScale:String,
     val windSpeed:String,
 )
+
+data class location(
+    val name:String,
+    val id:String,
+    val lat:String,
+    val lon:String
+)

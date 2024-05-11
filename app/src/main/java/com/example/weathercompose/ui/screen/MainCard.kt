@@ -30,10 +30,12 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.weathercompose.R
 import com.example.weathercompose.data.daily
 import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
@@ -48,7 +50,10 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun MainCard(
-    nowList: MutableState<now>
+    nowList: MutableState<now>,
+    onClickSync:()-> Unit,
+    onClickSearch:()-> Unit,
+    title:String = ""
 ) {
     Column(
         modifier = Modifier
@@ -60,7 +65,7 @@ fun MainCard(
                 .fillMaxWidth()
                 .padding(top = 3.dp)
                 .clickable {
-                    getNowData(context,nowList)
+                    getNowData(context, nowList)
                 }
                 .alpha(0.6f),
             colors = CardDefaults.cardColors(containerColor = BlueLight),
@@ -90,7 +95,7 @@ fun MainCard(
 
                     }
                     Text(
-                        text = "三亚",
+                        text = title.ifEmpty { "三亚" },
                         style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold),
                         color = Color.White
                     )
@@ -109,11 +114,11 @@ fun MainCard(
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         IconButton(onClick = {
-
+                            onClickSearch.invoke()
                         }) {
                             Icon(
                                 imageVector = Icons.Default.Search,
-                                contentDescription = "查找",
+                                contentDescription = stringResource(id = R.string.search),
                                 tint = Color.White
                             )
 
@@ -127,11 +132,11 @@ fun MainCard(
                         )
 
                         IconButton(onClick = {
-
+                            onClickSync.invoke()
                         }) {
                             Icon(
                                 imageVector = Icons.Default.Refresh,
-                                contentDescription = "查找",
+                                contentDescription = stringResource(id = R.string.refresh),
                                 tint = Color.White
                             )
                         }

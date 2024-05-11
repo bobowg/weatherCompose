@@ -22,7 +22,7 @@
           </stringArguments>
           <arrayArguments>
             <arrayArg name="pluginClasspaths">
-              <args>$MODULE_DIR$/../../../../../Android/Gradle/caches/modules-2/files-2.1/androidx.compose.compiler/compiler/1.5.1/2df7032eec187317f8ac0c565a733cea10f55e13/compiler-1.5.1.jar</args>
+              <args>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.compiler/compiler/1.5.1/2df7032eec187317f8ac0c565a733cea10f55e13/compiler-1.5.1.jar</args>
             </arrayArg>
             <arrayArg name="pluginOptions">
               <args>plugin:androidx.compose.plugins.idea:enabled=true</args>
