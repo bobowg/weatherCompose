@@ -6,16 +6,16 @@ import androidx.compose.runtime.MutableState
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.weathercompose.BuildConfig
 import org.json.JSONObject
 
 
-const val API_KEY = "b766df9be8b148dca6717290db69a739"
 
+const val API_KEY = BuildConfig.API_KEY
 
-fun getNowData(context: Context, now: MutableState<now>) {
-    val url = "https://devapi.qweather.com/v7/weather/now?location=" +
-            "101310218" +
-            "&key=$API_KEY"
+fun getNowData( context: Context, now: MutableState<now>,id: String = "101310218") {
+    val url = "https://devapi.qweather.com/v7/weather/now?location=${id}"+
+    "&key=${API_KEY}"
     val queue = Volley.newRequestQueue(context)
     val sRequest = StringRequest(
         Request.Method.GET,
@@ -54,9 +54,8 @@ fun getWeather(response: String): now {
 
 }
 
-fun get7DaysData(context: Context, daysList: MutableState<List<daily>>) {
-    val url = "https://devapi.qweather.com/v7/weather/7d?location=" +
-            "101310218" +
+fun get7DaysData( context: Context, daysList: MutableState<List<daily>>,id: String = "101310218") {
+    val url = "https://devapi.qweather.com/v7/weather/7d?location=${id}" +
             "&key=$API_KEY"
     val queue = Volley.newRequestQueue(context)
     val sRequest = StringRequest(
@@ -115,9 +114,12 @@ fun getWeatherBy7Days(response: String): List<daily> {
     return list
 }
 
-fun get24HourlyData(context: Context, daysList: MutableState<List<hourly>>) {
-    val url = "https://devapi.qweather.com/v7/weather/24h?location=" +
-            "101310218" +
+fun get24HourlyData(
+    context: Context,
+    daysList: MutableState<List<hourly>>,
+    id: String = "101310218"
+) {
+    val url = "https://devapi.qweather.com/v7/weather/24h?location=${id}" +
             "&key=$API_KEY"
     val queue = Volley.newRequestQueue(context)
     val sRequest = StringRequest(
@@ -154,4 +156,40 @@ fun getWeatherBy24Hourly(response: String): List<hourly> {
         )
     }
     return list
+}
+
+fun getCityData(city: String, context: Context, cityList: MutableState<location>) {
+    val url = "https://geoapi.qweather.com/v2/city/lookup?location=${city}" +
+            "&key=$API_KEY"
+    val queue = Volley.newRequestQueue(context)
+    val sRequest = StringRequest(
+        Request.Method.GET,
+        url,
+        { response ->
+            val list = getWeatherByCity(response)
+            cityList.value = list
+        }, {
+            Log.d("mylog", "VolleyError:$it")
+        }
+    )
+    queue.add(sRequest)
+}
+
+fun getWeatherByCity(response: String): location {
+    if (response.isEmpty()) return location("","","","")
+    val list = ArrayList<location>()
+    val mainObject = JSONObject(response)
+    val hourlys = mainObject.getJSONArray("location")
+    for (i in 0 until hourlys.length()) {
+        val item = hourlys[i] as JSONObject
+        list.add(
+            location(
+                name = item.getString("name"),
+                id = item.getString("id"),
+                lat = item.getString("lat"),
+                lon = item.getString("lon")
+            )
+        )
+    }
+    return list[0]
 }
