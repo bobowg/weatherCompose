@@ -77,11 +77,13 @@ class MainActivity : ComponentActivity() {
                     MainCard(
                         nowList,
                         onClickSync = {
+                            getCityData("三亚", this@MainActivity, citylist)
                             getNowData(context = this@MainActivity, now = nowList)
+                            get7DaysData(context = this@MainActivity, daysList = daysList)
+                            get24HourlyData(context = this@MainActivity, daysList = hourlyList)
                         },
                         onClickSearch = {
                             dialogState.value = true
-
                         },
                         title = citylist.value.name
                     )
