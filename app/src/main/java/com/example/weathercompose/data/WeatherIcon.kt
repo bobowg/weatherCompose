@@ -1,7 +1,7 @@
 package com.example.weathercompose.data
 
 enum class season {
-    Spring, Summer, Autumn, Winter
+    Spring, Summer, Autumn, Winter,Night
 }
 
 enum class WeatherIcon(val int: Int) {

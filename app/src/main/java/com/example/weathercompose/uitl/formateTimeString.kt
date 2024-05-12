@@ -4,6 +4,7 @@ import androidx.annotation.DrawableRes
 import com.example.weathercompose.R
 import com.example.weathercompose.data.season
 import com.example.weathercompose.data.season.Autumn
+import com.example.weathercompose.data.season.Night
 import com.example.weathercompose.data.season.Spring
 import com.example.weathercompose.data.season.Summer
 import com.example.weathercompose.data.season.Winter
@@ -21,5 +22,6 @@ fun ImageReslut(): Int {
         Summer -> R.drawable.sunny_bg
         Autumn -> R.drawable.haze_bg
         Winter -> R.drawable.snow_bg
+        Night -> R.drawable.night_bg
     }
 }
