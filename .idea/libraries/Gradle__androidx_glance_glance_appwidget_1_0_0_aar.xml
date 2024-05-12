@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.glance:glance-appwidget:1.0.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/jars/libs/repackaged.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/androidx.glance/glance-appwidget/1.0.0/26acf13ea6f3fd9f48efc2c6d4f2440f2eacdd8/glance-appwidget-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

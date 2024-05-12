@@ -1,19 +1,15 @@
 package com.example.weathercompose
 
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.ui.platform.LocalContext
-import androidx.test.platform.app.InstrumentationRegistry
+import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.weathercompose.data.getCityData
-import com.example.weathercompose.data.location
-import com.example.weathercompose.uitl.toTime
-
+import androidx.test.platform.app.InstrumentationRegistry
+import com.example.weathercompose.data.now
+import com.example.weathercompose.ui.screen.MainCard
+import org.junit.Assert.assertEquals
+import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-
-import org.junit.Assert.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -29,5 +25,32 @@ class ExampleInstrumentedTest {
         assertEquals("com.example.weathercompose", appContext.packageName)
     }
 
+    @get:Rule
+    val rule = createComposeRule()
 
+    @Test
+    fun horlyTest() {
+        rule.setContent {
+            val nowlist = mutableStateOf(
+                now(
+                    "2012-15-13",
+                    "23",
+                    "25",
+                    "302",
+                    "ssfe",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                )
+            )
+            MainCard(nowList =nowlist, onClickSync = { /*TODO*/ }, onClickSearch = { /*TODO*/ })
+        }
+    }
 }

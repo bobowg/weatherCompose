@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-test-android:1.6.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a520ddcd680282c8d3fb7bce9bdb268/transformed/ui-test-release/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a520ddcd680282c8d3fb7bce9bdb268/transformed/ui-test-release/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a520ddcd680282c8d3fb7bce9bdb268/transformed/ui-test-release/res" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/9fed01464588fa0e25a52cf3ee65631f/transformed/ui-test-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/9fed01464588fa0e25a52cf3ee65631f/transformed/ui-test-release/res" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/9fed01464588fa0e25a52cf3ee65631f/transformed/ui-test-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-test-android/1.6.7/574c3552265032379904fa84fb6139bd0dc3c64e/ui-test-android-1.6.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-test-android/1.6.7/574c3552265032379904fa84fb6139bd0dc3c64e/ui-test-android-1.6.7-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

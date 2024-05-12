@@ -25,3 +25,4 @@ string search
 style Theme.WeatherCompose
 xml backup_rules
 xml data_extraction_rules
+xml my_app_widget_info

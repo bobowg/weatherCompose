@@ -19,7 +19,6 @@ import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.location
 import com.example.weathercompose.data.now
-import com.example.weathercompose.data.season
 import com.example.weathercompose.ui.screen.DialogSearch
 import com.example.weathercompose.ui.screen.MainCard
 import com.example.weathercompose.ui.screen.TabLayout

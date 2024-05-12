@@ -4,7 +4,7 @@
             "outputFile": "com.example.weathercompose.test.app-mergeDebugAndroidTestResources-32:/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
-                    "source": "/home/bobowg/.gradle/caches/transforms-3/89dc8fc1adb6224102a1eccf85066528/transformed/core-1.13.1/res/values-zh-rCN/values-zh-rCN.xml",
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/4394fbdf7aade6f55042723368a93d31/transformed/core-1.13.1/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/bobowg/.gradle/caches/transforms-3/419753eb1d014387ad04789468a73180/transformed/ui-release/res/values-zh-rCN/values-zh-rCN.xml",
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

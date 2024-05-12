@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: io.coil-kt:coil-svg:2.2.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1b6de45d1ec72f4c18a52908f2d423ed/transformed/coil-svg-2.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1b6de45d1ec72f4c18a52908f2d423ed/transformed/coil-svg-2.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/8caa05a0a221d530d7be049e3563d5fd/transformed/coil-svg-2.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/8caa05a0a221d530d7be049e3563d5fd/transformed/coil-svg-2.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt/coil-svg/2.2.0/dd15e75d1c3f06833e8bccda6035e28c31a54644/coil-svg-2.2.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/io.coil-kt/coil-svg/2.2.0/dd15e75d1c3f06833e8bccda6035e28c31a54644/coil-svg-2.2.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt/coil-svg/2.2.0/df64be2118cd7087d5ac036f1c19f7b14d30c8c2/coil-svg-2.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/io.coil-kt/coil-svg/2.2.0/df64be2118cd7087d5ac036f1c19f7b14d30c8c2/coil-svg-2.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
