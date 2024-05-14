@@ -3,6 +3,7 @@ package com.example.weathercompose.ui.widget
 import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -11,6 +12,7 @@ import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
 import androidx.glance.ImageProvider
+import androidx.glance.LocalContext
 import androidx.glance.action.ActionParameters
 import androidx.glance.action.actionStartActivity
 import androidx.glance.action.clickable
@@ -34,6 +36,8 @@ import androidx.glance.text.TextStyle
 import androidx.glance.unit.ColorProvider
 import com.example.weathercompose.MainActivity
 import com.example.weathercompose.R
+import com.example.weathercompose.data.getCityData
+import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.now
 
 
@@ -48,8 +52,7 @@ val countKey = intPreferencesKey("count")
 class WeatherWidget : GlanceAppWidget() {
     override val sizeMode: SizeMode = SizeMode.Exact
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-        val nowList =
-            mutableStateOf(now("", "", "", "", "", "", "", "", "", "", "", "", "", "", ""))
+
 
         provideContent {
             GlanceTheme {
@@ -62,8 +65,19 @@ class WeatherWidget : GlanceAppWidget() {
     @Composable
     fun WeatherNow(
     ) {
+        val nowList = remember {
+            mutableStateOf(now("", "", "", "", "", "", "", "", "", "", "", "", "", "", ""))
+        }
+        val context = LocalContext.current
+        getNowData(
+            context = context,
+            now = nowList,
+        )
         Column(
-            modifier = GlanceModifier.fillMaxSize().background(ImageProvider(R.drawable.night_bg)),
+            modifier = GlanceModifier.fillMaxSize().background(ImageProvider(R.drawable.night_bg))
+                .clickable(
+                    onClick = actionStartActivity<MainActivity>()
+                ),
             verticalAlignment = Alignment.CenterVertically,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -74,9 +88,14 @@ class WeatherWidget : GlanceAppWidget() {
             ) {
                 Text(
                     text = "三亚",
-                    modifier = GlanceModifier.size(135.dp).clickable (
-                        onClick = actionStartActivity<MainActivity>()
-                    ),
+                    style = TextStyle(
+                        color = ColorProvider(Color.White),
+                        fontSize = 25.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                )
+                Text(
+                    text = "${nowList.value.temp}°C",
                     style = TextStyle(
                         color = ColorProvider(Color.White),
                         fontSize = 25.sp,

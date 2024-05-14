@@ -26,7 +26,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -66,8 +65,7 @@ fun MainCard(
                 .padding(top = 3.dp)
                 .clickable {
                     getNowData(context, nowList)
-                }
-                .alpha(0.6f),
+                },
             colors = CardDefaults.cardColors(containerColor = BlueLight),
             elevation = CardDefaults.cardElevation(0.dp),
             shape = RoundedCornerShape(10.dp)
@@ -166,8 +164,7 @@ fun TabLayout(
     ) {
         PrimaryTabRow(
             modifier = Modifier
-                .fillMaxWidth()
-                .alpha(0.8f),
+                .fillMaxWidth(),
             selectedTabIndex = tabIndex,
             containerColor = BlueLight,
             contentColor = Color.White,

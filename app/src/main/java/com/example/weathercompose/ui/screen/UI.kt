@@ -1,5 +1,7 @@
 package com.example.weathercompose.ui.screen
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -30,7 +32,6 @@ fun horlyList(item: hourly) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .alpha(0.5f)
             .padding(top = 3.dp),
         colors = CardDefaults.cardColors(containerColor = BlueLight),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
@@ -65,7 +66,6 @@ fun dailyItem(item: daily) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .alpha(0.5f)
             .padding(top = 3.dp),
         colors = CardDefaults.cardColors(containerColor = BlueLight),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
@@ -79,13 +79,19 @@ fun dailyItem(item: daily) {
             Column(
                 modifier = Modifier
                     .padding(start = 8.dp, top = 5.dp, bottom = 5.dp)
-                    .size(150.dp),
+                    .size(height = 168.dp, width = 190.dp),
                 horizontalAlignment = Alignment.Start,
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(text = item.fxDate, color = Color.White, fontSize = 15.sp)
                 Text(
-                    text = "白天:${item.textDay} 日出：${item.sunrise} 日落：${item.sunset}",
+                    text = "白天:${item.textDay}",
+                    color = Color.White,
+                    fontSize = 15.sp,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text(
+                    text = "日出：${item.sunrise} 日落：${item.sunset}",
                     color = Color.White,
                     fontSize = 15.sp,
                     overflow = TextOverflow.Ellipsis

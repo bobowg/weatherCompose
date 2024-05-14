@@ -9,8 +9,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import com.example.weathercompose.data.daily
 import com.example.weathercompose.data.get24HourlyData
 import com.example.weathercompose.data.get7DaysData
@@ -69,11 +71,15 @@ class MainActivity : ComponentActivity() {
                 }
                 Image(
                     painter = painterResource(id = ImageReslut()),
-                    contentDescription = "cloudy_bg",
+                    contentDescription = stringResource(id = R.string.app_name),
                     modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.FillBounds
+                    contentScale = ContentScale.Crop
                 )
-                Column {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .alpha(0.8f)
+                ){
                     MainCard(
                         nowList,
                         onClickSync = {
@@ -89,6 +95,7 @@ class MainActivity : ComponentActivity() {
                     )
                     TabLayout(daysList, hourlyList)
                 }
+
             }
         }
     }
