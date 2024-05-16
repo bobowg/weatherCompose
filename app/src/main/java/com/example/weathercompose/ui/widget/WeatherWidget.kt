@@ -8,9 +8,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.glance.ColorFilter
 import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
+import androidx.glance.Image
 import androidx.glance.ImageProvider
 import androidx.glance.LocalContext
 import androidx.glance.action.ActionParameters
@@ -29,14 +31,12 @@ import androidx.glance.layout.Row
 import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.fillMaxWidth
 import androidx.glance.layout.padding
-import androidx.glance.layout.size
 import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
 import androidx.glance.unit.ColorProvider
 import com.example.weathercompose.MainActivity
 import com.example.weathercompose.R
-import com.example.weathercompose.data.getCityData
 import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.now
 
@@ -86,25 +86,42 @@ class WeatherWidget : GlanceAppWidget() {
                 horizontalAlignment = Alignment.Start,
                 verticalAlignment = Alignment.Top
             ) {
+                Column {
+                    Text(
+                        text = "三亚",
+                        style = TextStyle(
+                            color = ColorProvider(Color.White),
+                            fontSize = 25.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    )
+                    Text(
+                        text = "${nowList.value.temp}°C",
+                        style = TextStyle(
+                            color = ColorProvider(Color.White),
+                            fontSize = 23.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    )
+                }
                 Text(
-                    text = "三亚",
+                    text = nowList.value.text,
                     style = TextStyle(
                         color = ColorProvider(Color.White),
-                        fontSize = 25.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.Bold
                     )
                 )
-                Text(
-                    text = "${nowList.value.temp}°C",
-                    style = TextStyle(
-                        color = ColorProvider(Color.White),
-                        fontSize = 25.sp,
-                        fontWeight = FontWeight.Bold
-                    )
+                Image(
+                    contentDescription = context.getString(R.string.app_name),
+                    provider = ImageProvider(R.drawable.ic_launcher_foreground)
                 )
+
+
             }
         }
     }
+
 }
 
 
