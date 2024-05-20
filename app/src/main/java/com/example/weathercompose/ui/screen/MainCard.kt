@@ -40,6 +40,7 @@ import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
+import com.example.weathercompose.uitl.textColor
 import com.example.weathercompose.uitl.toTime
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
@@ -50,9 +51,9 @@ import kotlinx.coroutines.launch
 @Composable
 fun MainCard(
     nowList: MutableState<now>,
-    onClickSync:()-> Unit,
-    onClickSearch:()-> Unit,
-    title:String = ""
+    onClickSync: () -> Unit,
+    onClickSearch: () -> Unit,
+    title: String = ""
 ) {
     Column(
         modifier = Modifier
@@ -83,10 +84,14 @@ fun MainCard(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
+
                         Text(
                             modifier = Modifier.padding(top = 8.dp, start = 8.dp),
                             text = toTime(nowList.value.obsTime),
-                            style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold),
+                            style = TextStyle(
+                                fontSize = 15.sp,
+                                fontWeight = FontWeight.Bold
+                            ),
                             color = Color.White
                         )
                         WeatherSelectIcon(nowList.value.icon)
@@ -94,7 +99,9 @@ fun MainCard(
                     }
                     Text(
                         text = title.ifEmpty { "三亚" },
-                        style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold),
+                        style = TextStyle(
+                            fontSize = 25.sp, fontWeight = FontWeight.Bold
+                        ),
                         color = Color.White
                     )
                     Text(
@@ -105,7 +112,7 @@ fun MainCard(
                     Text(
                         text = nowList.value.text,
                         style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
-                        color = Color.White
+                        color = if (nowList.value.text.contains("雨")) textColor() else Color.White
                     )
                     Row(
                         modifier = Modifier.fillMaxWidth(),

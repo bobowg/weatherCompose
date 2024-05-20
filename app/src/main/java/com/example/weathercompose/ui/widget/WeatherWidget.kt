@@ -1,13 +1,17 @@
 package com.example.weathercompose.ui.widget
 
 import android.content.Context
+import android.widget.ImageButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.glance.Button
 import androidx.glance.ColorFilter
 import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
@@ -22,6 +26,7 @@ import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.GlanceAppWidgetReceiver
 import androidx.glance.appwidget.SizeMode
 import androidx.glance.appwidget.action.ActionCallback
+import androidx.glance.appwidget.action.actionRunCallback
 import androidx.glance.appwidget.provideContent
 import androidx.glance.appwidget.state.updateAppWidgetState
 import androidx.glance.background
@@ -39,6 +44,7 @@ import com.example.weathercompose.MainActivity
 import com.example.weathercompose.R
 import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.now
+import java.sql.Ref
 
 
 class WeatherWidgetReceiver : GlanceAppWidgetReceiver() {
@@ -51,9 +57,8 @@ val countKey = intPreferencesKey("count")
 
 class WeatherWidget : GlanceAppWidget() {
     override val sizeMode: SizeMode = SizeMode.Exact
+
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-
-
         provideContent {
             GlanceTheme {
                 WeatherNow()
@@ -86,7 +91,10 @@ class WeatherWidget : GlanceAppWidget() {
                 horizontalAlignment = Alignment.Start,
                 verticalAlignment = Alignment.Top
             ) {
-                Column {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalAlignment = Alignment.Top
+                ) {
                     Text(
                         text = "三亚",
                         style = TextStyle(
@@ -116,8 +124,9 @@ class WeatherWidget : GlanceAppWidget() {
                     contentDescription = context.getString(R.string.app_name),
                     provider = ImageProvider(R.drawable.ic_launcher_foreground)
                 )
-
-
+                Button(text = "刷新", onClick = {
+                    actionRunCallback<RefreshAction>()
+                })
             }
         }
     }
@@ -132,12 +141,7 @@ class RefreshAction : ActionCallback {
         parameters: ActionParameters
     ) {
         updateAppWidgetState(context, glanceId) { prsf ->
-            val current = prsf[countKey]
-            if (current != null) {
-                prsf[countKey] = current + 256
-            } else {
-                prsf[countKey] = 1
-            }
+            prsf.clear()
         }
         WeatherWidget().update(context, glanceId)
 
