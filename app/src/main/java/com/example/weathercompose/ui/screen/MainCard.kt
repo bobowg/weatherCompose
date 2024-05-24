@@ -1,5 +1,7 @@
 package com.example.weathercompose.ui.screen
 
+import android.Manifest
+import androidx.annotation.RequiresPermission
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -49,9 +51,12 @@ import kotlinx.coroutines.launch
 
 
 @Composable
+@RequiresPermission(
+    anyOf = [Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION],
+)
 fun MainCard(
     nowList: MutableState<now>,
-    onClickSync: () -> Unit,
+    onClickSync: @Composable () -> Unit,
     onClickSearch: () -> Unit,
     title: String = ""
 ) {
