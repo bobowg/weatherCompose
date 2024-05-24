@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$PROJECT_DIR$/../../Android/SDK/icons/material/materialicons/sunny/baseline_sunny_24.xml" />
+                                      <entry key="url" value="file:$PROJECT_DIR$/../../Android/SDK/icons/material/materialicons/cancel/baseline_cancel_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -34,7 +34,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="fdb700" />
-                            <entry key="outputName" value="baseline_sunny_24" />
+                            <entry key="outputName" value="baseline_cancel" />
                             <entry key="sourceFile" value="$USER_HOME$/桌面/ic_sun_cloud_mid_rain.svg" />
                           </map>
                         </option>

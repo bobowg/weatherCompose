@@ -4,7 +4,7 @@
             "outputFile": "com.example.weathercompose.test.app-mergeDebugAndroidTestResources-32:/values-da/values-da.xml",
             "map": [
                 {
-                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/res/values-da/values-da.xml",
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/3d650bcef7668bd7072832f6a584b716/transformed/ui-release/res/values-da/values-da.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/4394fbdf7aade6f55042723368a93d31/transformed/core-1.13.1/res/values-da/values-da.xml",
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/473afeaae77d6d8a5ae99f2b3eb0659b/transformed/core-1.13.1/res/values-da/values-da.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -29,8 +29,11 @@ import com.example.weathercompose.uitl.ImageReslut
 
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             WeatherComposeTheme {
                 val daysList = remember {
@@ -79,14 +82,14 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier
                         .fillMaxSize()
                         .alpha(0.8f)
-                ){
+                ) {
                     MainCard(
                         nowList,
                         onClickSync = {
-                            getCityData("三亚", this@MainActivity, citylist)
-                            getNowData(context = this@MainActivity, now = nowList)
-                            get7DaysData(context = this@MainActivity, daysList = daysList)
-                            get24HourlyData(context = this@MainActivity, daysList = hourlyList)
+                                getCityData("三亚", this@MainActivity, citylist)
+                                getNowData(context = this@MainActivity, now = nowList)
+                                get7DaysData(context = this@MainActivity, daysList = daysList)
+                                get24HourlyData(context = this@MainActivity, daysList = hourlyList)
                         },
                         onClickSearch = {
                             dialogState.value = true
@@ -99,6 +102,8 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+
 }
 
 

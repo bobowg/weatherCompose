@@ -4,24 +4,7 @@
             "outputFile": "com.example.weathercompose.test.app-mergeDebugAndroidTestResources-32:/values-hi/values-hi.xml",
             "map": [
                 {
-                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/4394fbdf7aade6f55042723368a93d31/transformed/core-1.13.1/res/values-hi/values-hi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,256,361,462,575,681,808",
-                        "endColumns": "97,102,104,100,112,105,126,100",
-                        "endOffsets": "148,251,356,457,570,676,803,904"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,23",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,203,306,411,512,625,731,2041",
-                        "endColumns": "97,102,104,100,112,105,126,100",
-                        "endOffsets": "198,301,406,507,620,726,853,2137"
-                    }
-                },
-                {
-                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/res/values-hi/values-hi.xml",
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/3d650bcef7668bd7072832f6a584b716/transformed/ui-release/res/values-hi/values-hi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "858,953,1036,1129,1227,1316,1394,1491,1580,1665,1733,1802,1883,1968,2142,2223,2289",
                         "endColumns": "94,82,92,97,88,77,96,88,84,67,68,80,84,72,80,65,119",
                         "endOffsets": "948,1031,1124,1222,1311,1389,1486,1575,1660,1728,1797,1878,1963,2036,2218,2284,2404"
+                    }
+                },
+                {
+                    "source": "/media/bobowg/learn/Android/Gradle/caches/transforms-3/473afeaae77d6d8a5ae99f2b3eb0659b/transformed/core-1.13.1/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,256,361,462,575,681,808",
+                        "endColumns": "97,102,104,100,112,105,126,100",
+                        "endOffsets": "148,251,356,457,570,676,803,904"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,23",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,306,411,512,625,731,2041",
+                        "endColumns": "97,102,104,100,112,105,126,100",
+                        "endOffsets": "198,301,406,507,620,726,853,2137"
                     }
                 }
             ]
