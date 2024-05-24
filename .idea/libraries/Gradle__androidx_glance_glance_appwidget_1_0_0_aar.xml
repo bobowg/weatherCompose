@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.glance:glance-appwidget:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/836fcc45d100d33386a33544291e2fe4/transformed/glance-appwidget-1.0.0/jars/libs/repackaged.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/1702549ea752cb5685d40849c6a7e72d/transformed/glance-appwidget-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/1702549ea752cb5685d40849c6a7e72d/transformed/glance-appwidget-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/1702549ea752cb5685d40849c6a7e72d/transformed/glance-appwidget-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/1702549ea752cb5685d40849c6a7e72d/transformed/glance-appwidget-1.0.0/jars/libs/repackaged.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

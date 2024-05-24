@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-geometry-android:1.6.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/50c4d1c2b5fc6f0c6bb6cbc5b4e797c2/transformed/ui-geometry-release/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/50c4d1c2b5fc6f0c6bb6cbc5b4e797c2/transformed/ui-geometry-release/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/50c4d1c2b5fc6f0c6bb6cbc5b4e797c2/transformed/ui-geometry-release/res" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/7566aedce51c49191cd03ce577b0c3a2/transformed/ui-geometry-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/7566aedce51c49191cd03ce577b0c3a2/transformed/ui-geometry-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/7566aedce51c49191cd03ce577b0c3a2/transformed/ui-geometry-release/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

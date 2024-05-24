@@ -69,6 +69,7 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.volley)
     implementation(libs.accompanist.pager.indicators)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

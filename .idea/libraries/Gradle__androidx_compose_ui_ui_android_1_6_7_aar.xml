@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-android:1.6.7@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6ff06b06b6c4c607c7bf2b1a2de9bcee/transformed/ui-release/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/res" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/90111b009f7efc958d555fa887589202/transformed/ui-release/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6ff06b06b6c4c607c7bf2b1a2de9bcee/transformed/ui-release/res" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6ff06b06b6c4c607c7bf2b1a2de9bcee/transformed/ui-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/6ff06b06b6c4c607c7bf2b1a2de9bcee/transformed/ui-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

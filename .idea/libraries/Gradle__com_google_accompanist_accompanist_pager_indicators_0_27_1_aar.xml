@@ -1,10 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.accompanist:accompanist-pager-indicators:0.27.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/a6a3907de6ad5f4ed003b2c1a0948f0a/transformed/accompanist-pager-indicators-0.27.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/a6a3907de6ad5f4ed003b2c1a0948f0a/transformed/accompanist-pager-indicators-0.27.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/c7a2b0c18b962d8a78345a9404e35c6b/transformed/accompanist-pager-indicators-0.27.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/c7a2b0c18b962d8a78345a9404e35c6b/transformed/accompanist-pager-indicators-0.27.1/jars/classes.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-pager-indicators/0.27.1/19a66a415ea37b8d1e34dff89f8051ee746226d0/accompanist-pager-indicators-0.27.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-pager-indicators/0.27.1/fd1b39fa769c189b8b7430d6fec4d567a5824e99/accompanist-pager-indicators-0.27.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
