@@ -70,6 +70,7 @@ dependencies {
     implementation(libs.volley)
     implementation(libs.accompanist.pager.indicators)
     implementation(libs.play.services.location)
+    implementation(libs.androidx.localbroadcastmanager)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

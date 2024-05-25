@@ -21,6 +21,7 @@ string Cance
 string OK
 string app_name
 string input_city_name
+string no_location_text
 string preference_file_key
 string refresh
 string search

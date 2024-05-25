@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-test-manifest:1.6.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/a237a43ad846e44d3d5021a470a61bcf/transformed/ui-test-manifest-1.6.7/res" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/a237a43ad846e44d3d5021a470a61bcf/transformed/ui-test-manifest-1.6.7/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/a237a43ad846e44d3d5021a470a61bcf/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

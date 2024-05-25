@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.glance:glance:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/2f6343deabc0d98928b3d288b19a9b1c/transformed/glance-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/2f6343deabc0d98928b3d288b19a9b1c/transformed/glance-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/2f6343deabc0d98928b3d288b19a9b1c/transformed/glance-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/0e83224fe293e9323bfa05c663ae5a60/transformed/glance-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/0e83224fe293e9323bfa05c663ae5a60/transformed/glance-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Android/Gradle/caches/transforms-3/0e83224fe293e9323bfa05c663ae5a60/transformed/glance-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

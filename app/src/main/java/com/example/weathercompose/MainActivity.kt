@@ -1,10 +1,8 @@
 package com.example.weathercompose
 
-import android.Manifest
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.annotation.RequiresPermission
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -27,16 +25,12 @@ import com.example.weathercompose.ui.screen.DialogSearch
 import com.example.weathercompose.ui.screen.MainCard
 import com.example.weathercompose.ui.screen.TabLayout
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
-import com.example.weathercompose.uitl.CurrentLocationContent
 import com.example.weathercompose.uitl.ImageReslut
 
 
 class MainActivity : ComponentActivity() {
 
 
-    @RequiresPermission(
-        anyOf = [Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION],
-    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -55,6 +49,7 @@ class MainActivity : ComponentActivity() {
                     mutableStateOf(location("", "", "", ""))
                 }
                 val dialogState = remember { mutableStateOf(false) }
+
                 if (dialogState.value) {
                     DialogSearch(dialogState, onSubmit = {
                         getCityData(it, this, citylist)
@@ -92,11 +87,10 @@ class MainActivity : ComponentActivity() {
                     MainCard(
                         nowList,
                         onClickSync = {
-
-                                getCityData(CurrentLocationContent(), this@MainActivity, citylist)
-                                getNowData(context = this@MainActivity, now = nowList)
-                                get7DaysData(context = this@MainActivity, daysList = daysList)
-                                get24HourlyData(context = this@MainActivity, daysList = hourlyList)
+                            getCityData("三亚", this@MainActivity, citylist)
+                            getNowData(context = this@MainActivity, now = nowList)
+                            get7DaysData(context = this@MainActivity, daysList = daysList)
+                            get24HourlyData(context = this@MainActivity, daysList = hourlyList)
                         },
                         onClickSearch = {
                             dialogState.value = true

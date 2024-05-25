@@ -14,8 +14,7 @@ gson = "2.10.1"
 volley = "1.2.1"
 glance = "1.0.0"
 playServicesLocation = "21.2.0"
-
-
+localbroadcastmanager = "1.1.0"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -40,7 +39,7 @@ accompanist-pager = { group = "com.google.accompanist", name = "accompanist-page
 accompanist-pager-indicators = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "accompanist" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
-
+androidx-localbroadcastmanager = { group="androidx.localbroadcastmanager",name="localbroadcastmanager",version.ref="localbroadcastmanager"}
 
 
 

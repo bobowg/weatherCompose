@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:2:1-50:12
 MERGED from [androidx.glance:glance:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/0e83224fe293e9323bfa05c663ae5a60/transformed/glance-1.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.glance:glance-material3:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/90201eb040e15bd81ad58db8b38c3050/transformed/glance-material3-1.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:17:1-56:12
@@ -101,23 +101,21 @@ uses-permission#android.permission.INTERNET
 ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:5:22-64
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:6:5-81
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:6:5-77
+MERGED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+MERGED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:6:22-74
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:7:5-113
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:7:5-9:45
 	tools:ignore
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:7:77-110
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:9:9-42
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:7:22-76
-uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:9:5-77
-	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:9:22-74
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:8:9-63
 application
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:11:5-45:19
-INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:11:5-45:19
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:11:5-48:19
+INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:11:5-48:19
 MERGED from [androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:22:5-54:19
 MERGED from [androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:22:5-54:19
 MERGED from [androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:23:5-28:19
@@ -193,31 +191,33 @@ ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManife
 	android:name
 		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:29:27-74
 receiver#com.example.weathercompose.ui.widget.WeatherWidgetReceiver
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:9-40:20
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:9-41:20
 	android:exported
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:33:13-36
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:19-66
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:33:13-60
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:13-36:29
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:35:13-37:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:35:17-84
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:36:17-84
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:35:25-81
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:36:25-81
 meta-data#android.appwidget.provider
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:37:13-39:62
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:38:13-40:62
 	android:resource
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:39:17-59
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:40:17-59
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:38:17-58
-service#com.example.weathercompose.uitl.ForegroundOnlyLocationService
-ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:41:9-43:39
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:39:17-58
+service#com.example.weathercompose.ui.widget.WeatherWidgetService
+ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:42:9-46:56
 	android:enabled
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:42:13-35
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:44:13-35
 	android:exported
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:43:13-36
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:45:13-37
+	android:foregroundServiceType
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:46:13-53
 	android:name
-		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:41:18-68
+		ADDED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:43:13-59
 uses-sdk
 INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml
@@ -494,10 +494,6 @@ uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
 	android:name
 		ADDED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
-uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
 MERGED from [androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20

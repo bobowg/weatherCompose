@@ -51,12 +51,9 @@ import kotlinx.coroutines.launch
 
 
 @Composable
-@RequiresPermission(
-    anyOf = [Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION],
-)
 fun MainCard(
     nowList: MutableState<now>,
-    onClickSync: @Composable () -> Unit,
+    onClickSync: () -> Unit,
     onClickSearch: () -> Unit,
     title: String = ""
 ) {
@@ -160,7 +157,7 @@ fun MainCard(
 
 @OptIn(ExperimentalPagerApi::class, ExperimentalMaterial3Api::class)
 @Composable
-fun TabLayout(
+ fun TabLayout(
     daysList: MutableState<List<daily>>,
     hourlyList: MutableState<List<hourly>>
 ) {
