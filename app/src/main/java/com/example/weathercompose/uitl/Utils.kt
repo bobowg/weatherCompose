@@ -4,13 +4,15 @@ import android.content.Context
 import android.location.Location
 import androidx.core.content.edit
 import com.example.weathercompose.R
+import java.text.DecimalFormat
 
 /**
  * Returns the `location` object as a human readable string.
  */
 fun Location?.toText(): String {
+    val decimatFormat = DecimalFormat("0.00")
     return if (this != null) {
-        "($latitude, $longitude)"
+        "${decimatFormat.format(longitude)},${decimatFormat.format(latitude)}"
     } else {
         "Unknown location"
     }

@@ -36,6 +36,7 @@ fun ImageReslut(): Int {
     }
 }
 
+
 @Composable
 fun textColor():Color{
     val infiniteTransition = rememberInfiniteTransition(label = "infinite transition")

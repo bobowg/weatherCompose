@@ -1,8 +1,12 @@
 package com.example.weathercompose
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -26,15 +30,49 @@ import com.example.weathercompose.ui.screen.MainCard
 import com.example.weathercompose.ui.screen.TabLayout
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
 import com.example.weathercompose.uitl.ImageReslut
-
+import com.example.weathercompose.uitl.toText
+import getCurrentLocation
 
 class MainActivity : ComponentActivity() {
 
+    private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val locationPermissionRequest = registerForActivityResult(
+            ActivityResultContracts.RequestMultiplePermissions()
+        ) { permissions ->
+            when {
+                permissions.getOrDefault(
+                    android.Manifest.permission.ACCESS_FINE_LOCATION,
+                    false
+                ) -> {
+                    // Precise location access granted.
+                }
+
+                permissions.getOrDefault(
+                    android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                    false
+                ) -> {
+                    // Only approximate location access granted.
+                }
+
+                else -> {
+                    // No location access granted.
+                }
+            }
+        }
+        locationPermissionRequest.launch(
+            arrayOf(
+                android.Manifest.permission.ACCESS_FINE_LOCATION,
+                android.Manifest.permission.ACCESS_COARSE_LOCATION
+            )
+        )
+
         setContent {
+
             WeatherComposeTheme {
                 val daysList = remember {
                     mutableStateOf(listOf<daily>())
@@ -73,6 +111,7 @@ class MainActivity : ComponentActivity() {
                         getNowData(context = this, now = nowList)
                     }
                 }
+
                 Image(
                     painter = painterResource(id = ImageReslut()),
                     contentDescription = stringResource(id = R.string.app_name),
@@ -87,10 +126,23 @@ class MainActivity : ComponentActivity() {
                     MainCard(
                         nowList,
                         onClickSync = {
-                            getCityData("三亚", this@MainActivity, citylist)
-                            getNowData(context = this@MainActivity, now = nowList)
-                            get7DaysData(context = this@MainActivity, daysList = daysList)
-                            get24HourlyData(context = this@MainActivity, daysList = hourlyList)
+                            val location = getCurrentLocation(this@MainActivity)
+                            getCityData(location.toText(), this@MainActivity, citylist)
+                            getNowData(
+                                context = this@MainActivity,
+                                now = nowList,
+                                id = location.toText()
+                            )
+                            get7DaysData(
+                                context = this@MainActivity,
+                                daysList = daysList,
+                                id = location.toText()
+                            )
+                            get24HourlyData(
+                                context = this@MainActivity,
+                                daysList = hourlyList,
+                                id = location.toText()
+                            )
                         },
                         onClickSearch = {
                             dialogState.value = true
