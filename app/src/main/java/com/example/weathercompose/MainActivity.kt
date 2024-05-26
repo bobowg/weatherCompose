@@ -1,12 +1,10 @@
 package com.example.weathercompose
 
-import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -36,27 +34,26 @@ import getCurrentLocation
 class MainActivity : ComponentActivity() {
 
     private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
-
-    @RequiresApi(Build.VERSION_CODES.O)
+    private var isLocationPermissionGranted = false
+    private var isStoragePermissionGranted = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val locationPermissionRequest = registerForActivityResult(
+        permissionLauncher = registerForActivityResult(
             ActivityResultContracts.RequestMultiplePermissions()
         ) { permissions ->
             when {
                 permissions.getOrDefault(
                     android.Manifest.permission.ACCESS_FINE_LOCATION,
-                    false
+                    true
                 ) -> {
-                    // Precise location access granted.
+                    isLocationPermissionGranted = permissions[android.Manifest.permission.ACCESS_FINE_LOCATION] ?: isLocationPermissionGranted
                 }
 
                 permissions.getOrDefault(
                     android.Manifest.permission.ACCESS_COARSE_LOCATION,
-                    false
+                    true
                 ) -> {
-                    // Only approximate location access granted.
+                    isStoragePermissionGranted = permissions[android.Manifest.permission.READ_EXTERNAL_STORAGE] ?: isStoragePermissionGranted
                 }
 
                 else -> {
@@ -64,7 +61,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        locationPermissionRequest.launch(
+        permissionLauncher.launch(
             arrayOf(
                 android.Manifest.permission.ACCESS_FINE_LOCATION,
                 android.Manifest.permission.ACCESS_COARSE_LOCATION

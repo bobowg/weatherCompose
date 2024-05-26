@@ -110,11 +110,38 @@ fun MainCard(
                         style = TextStyle(fontSize = 65.sp, fontWeight = FontWeight.Bold),
                         color = Color.White
                     )
+
                     Text(
                         text = nowList.value.text,
-                        style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                        style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold),
                         color = if (nowList.value.text.contains("雨")) textColor() else Color.White
                     )
+                    Column(
+                        modifier = Modifier.fillMaxWidth().padding(bottom = 5.dp),
+                        horizontalAlignment = Alignment.Start
+                    ){
+                        Text(
+                            text = "风速:${nowList.value.windSpeed} 公里/小时",
+                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                            color = Color.White,
+                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
+                        )
+
+                        Text(
+                            text = "湿度:${nowList.value.humidity}%，能见度:${nowList.value.vis}公里",
+                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                            color = Color.White,
+                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
+                        )
+
+                        Text(
+                            text = "降水量:${nowList.value.precip} 毫米，压强:${nowList.value.pressure}百帕",
+                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                            color = Color.White,
+                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
+                        )
+                    }
+
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
@@ -132,7 +159,7 @@ fun MainCard(
 
                         Text(
                             modifier = Modifier.padding(top = 8.dp),
-                            text = "感觉好像${nowList.value.feelsLike}°C 风向：${nowList.value.windDir} ${nowList.value.windScale}级",
+                            text = "体感温度:${nowList.value.feelsLike}°C 风向：${nowList.value.windDir} ${nowList.value.windScale}级",
                             style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
                             color = Color.White
                         )
