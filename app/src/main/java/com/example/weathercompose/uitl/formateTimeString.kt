@@ -36,6 +36,16 @@ fun ImageReslut(): Int {
     }
 }
 
+@DrawableRes
+fun logCard(text:String):Int{
+    return when(text){
+        text.contains("雨").toString() -> R.drawable.rain_bg
+        text.contains("晴").toString() -> R.drawable.sun_bg
+        text.contains("多云").toString() -> R.drawable.duyun
+        text.contains("阴").toString() -> R.drawable.ying_bg
+        else -> R.drawable.sunny_bg
+    }
+}
 
 @Composable
 fun textColor():Color{

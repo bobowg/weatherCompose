@@ -151,6 +151,7 @@ int drawable common_google_signin_btn_text_light 0x7f060015
 int drawable common_google_signin_btn_text_light_focused 0x7f060016
 int drawable common_google_signin_btn_text_light_normal 0x7f060017
 int drawable common_google_signin_btn_text_light_normal_background 0x7f060018
+int drawable duyun 0x7f06004a
 int drawable glance_abc_btn_check_material_anim_enabled 0x7f060019
 int drawable glance_btn_checkbox_checked_mtrl 0x7f06001a
 int drawable glance_btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f06001b
@@ -198,8 +199,11 @@ int drawable notification_template_icon_bg 0x7f060044
 int drawable notification_template_icon_low_bg 0x7f060045
 int drawable notification_tile_bg 0x7f060046
 int drawable notify_panel_notification_icon_bg 0x7f060047
+int drawable rain_bg 0x7f06004b
 int drawable snow_bg 0x7f060048
+int drawable sun_bg 0x7f06004c
 int drawable sunny_bg 0x7f060049
+int drawable ying_bg 0x7f06004d
 int id accessibility_action_clickable_span 0x7f070000
 int id accessibility_custom_action_0 0x7f070001
 int id accessibility_custom_action_1 0x7f070002

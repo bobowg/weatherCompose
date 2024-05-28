@@ -1,11 +1,14 @@
 package com.example.weathercompose.ui.screen
 
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -15,6 +18,7 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.PrimaryTabRow
@@ -22,25 +26,32 @@ import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weathercompose.R
 import com.example.weathercompose.data.daily
-import com.example.weathercompose.data.getNowData
 import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
+import com.example.weathercompose.ui.theme.WeatherComposeTheme
+import com.example.weathercompose.uitl.logCard
 import com.example.weathercompose.uitl.textColor
 import com.example.weathercompose.uitl.toTime
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -56,125 +67,146 @@ fun MainCard(
     onClickSearch: () -> Unit,
     title: String = ""
 ) {
+
     Column(
         modifier = Modifier
             .padding(5.dp),
     ) {
-        val context = LocalContext.current
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 3.dp)
-                .clickable {
-                    getNowData(context, nowList)
-                },
+                .background(color = BlueLight, shape = RoundedCornerShape(10.dp)),
             colors = CardDefaults.cardColors(containerColor = BlueLight),
-            elevation = CardDefaults.cardElevation(0.dp),
+            elevation = CardDefaults.cardElevation(10.dp),
             shape = RoundedCornerShape(10.dp)
         ) {
-            Column(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally,
+            Box(modifier = Modifier.height(320.dp)) {
+                Image(
+                    painter = painterResource(id = logCard(nowList.value.text)),
+                    contentDescription = stringResource(id = R.string.app_name),
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+                //拉渐变
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(
+                            brush = Brush.verticalGradient(
+                                colors = listOf(
+                                    Color.Transparent,
+                                    Color.Black
+                                ),
+                                startY = 300f//数据越大黑色越少
+                            )
+                        )
+                )
 
-                ) {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween
-                    ) {
+                    horizontalAlignment = Alignment.CenterHorizontally,
 
+                    ) {
+                    Column(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween
+                        ) {
+
+                            Text(
+                                modifier = Modifier.padding(top = 8.dp, start = 8.dp),
+                                text = toTime(nowList.value.obsTime),
+                                style = TextStyle(
+                                    fontSize = 15.sp,
+                                    fontWeight = FontWeight.Bold
+                                ),
+                                color = Color.White
+                            )
+                            WeatherSelectIcon(nowList.value.icon)
+
+                        }
                         Text(
-                            modifier = Modifier.padding(top = 8.dp, start = 8.dp),
-                            text = toTime(nowList.value.obsTime),
+                            text = title.ifEmpty { "三亚" },
                             style = TextStyle(
-                                fontSize = 15.sp,
-                                fontWeight = FontWeight.Bold
+                                fontSize = 25.sp, fontWeight = FontWeight.Bold
                             ),
                             color = Color.White
                         )
-                        WeatherSelectIcon(nowList.value.icon)
-
-                    }
-                    Text(
-                        text = title.ifEmpty { "三亚" },
-                        style = TextStyle(
-                            fontSize = 25.sp, fontWeight = FontWeight.Bold
-                        ),
-                        color = Color.White
-                    )
-                    Text(
-                        text = "${nowList.value.temp}°C",
-                        style = TextStyle(fontSize = 65.sp, fontWeight = FontWeight.Bold),
-                        color = Color.White
-                    )
-
-                    Text(
-                        text = nowList.value.text,
-                        style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold),
-                        color = if (nowList.value.text.contains("雨")) textColor() else Color.White
-                    )
-                    Column(
-                        modifier = Modifier.fillMaxWidth().padding(bottom = 5.dp),
-                        horizontalAlignment = Alignment.Start
-                    ){
                         Text(
-                            text = "风速:${nowList.value.windSpeed} 公里/小时",
-                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
-                            color = Color.White,
-                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
-                        )
-
-                        Text(
-                            text = "湿度:${nowList.value.humidity}%，能见度:${nowList.value.vis}公里",
-                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
-                            color = Color.White,
-                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
-                        )
-
-                        Text(
-                            text = "降水量:${nowList.value.precip} 毫米，压强:${nowList.value.pressure}百帕",
-                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
-                            color = Color.White,
-                            modifier = Modifier.padding(top = 5.dp, start = 15.dp)
-                        )
-                    }
-
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween
-                    ) {
-                        IconButton(onClick = {
-                            onClickSearch.invoke()
-                        }) {
-                            Icon(
-                                imageVector = Icons.Default.Search,
-                                contentDescription = stringResource(id = R.string.search),
-                                tint = Color.White
-                            )
-
-                        }
-
-                        Text(
-                            modifier = Modifier.padding(top = 8.dp),
-                            text = "体感温度:${nowList.value.feelsLike}°C 风向：${nowList.value.windDir} ${nowList.value.windScale}级",
-                            style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                            text = "${nowList.value.temp}°C",
+                            style = TextStyle(fontSize = 65.sp, fontWeight = FontWeight.Bold),
                             color = Color.White
                         )
 
-                        IconButton(onClick = {
-                            onClickSync.invoke()
-                        }) {
-                            Icon(
-                                imageVector = ImageVector.vectorResource(id = R.drawable.baseline_location),
-                                contentDescription = stringResource(id = R.string.refresh),
-                                tint = Color.White
+                        Text(
+                            text = nowList.value.text,
+                            style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold),
+                            color = if (nowList.value.text.contains("雨")) textColor() else Color.White
+                        )
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(bottom = 5.dp),
+                            horizontalAlignment = Alignment.Start
+                        ) {
+                            Text(
+                                text = "风速:${nowList.value.windSpeed} 公里/小时",
+                                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                                color = Color.White,
+                                modifier = Modifier.padding(top = 5.dp, start = 15.dp)
+                            )
+
+                            Text(
+                                text = "湿度:${nowList.value.humidity}%，能见度:${nowList.value.vis}公里",
+                                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                                color = Color.White,
+                                modifier = Modifier.padding(top = 5.dp, start = 15.dp)
+                            )
+
+                            Text(
+                                text = "降水量:${nowList.value.precip} 毫米，压强:${nowList.value.pressure}百帕",
+                                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                                color = Color.White,
+                                modifier = Modifier.padding(top = 5.dp, start = 15.dp)
                             )
                         }
-                    }
 
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween
+                        ) {
+                            IconButton(onClick = {
+                                onClickSearch.invoke()
+                            }) {
+                                Icon(
+                                    imageVector = Icons.Default.Search,
+                                    contentDescription = stringResource(id = R.string.search),
+                                    tint = Color.White
+                                )
+
+                            }
+
+                            Text(
+                                modifier = Modifier.padding(top = 8.dp),
+                                text = "体感温度:${nowList.value.feelsLike}°C 风向：${nowList.value.windDir} ${nowList.value.windScale}级",
+                                style = TextStyle(fontSize = 16.sp, fontWeight = FontWeight.Bold),
+                                color = Color.White
+                            )
+
+                            IconButton(onClick = { onClickSync.invoke() }) {
+                                Icon(
+                                    imageVector = ImageVector.vectorResource(id = R.drawable.baseline_location),
+                                    contentDescription = stringResource(id = R.string.refresh),
+                                    tint = Color.White
+                                )
+                            }
+                        }
+
+                    }
                 }
             }
         }
@@ -185,7 +217,7 @@ fun MainCard(
 @Composable
 fun TabLayout(
     daysList: MutableState<List<daily>>,
-    hourlyList: MutableState<List<hourly>>
+    hourlyList: MutableState<List<hourly>>,
 ) {
     val tabList = listOf("24小时", "7天")
     val pageState = rememberPagerState()
@@ -195,7 +227,7 @@ fun TabLayout(
     Column(
         modifier = Modifier
             .padding(start = 5.dp, end = 5.dp)
-            .clip(RoundedCornerShape(5.dp)),
+            .clip(RoundedCornerShape(5.dp)).alpha(0.8f),
     ) {
         PrimaryTabRow(
             modifier = Modifier
@@ -204,7 +236,7 @@ fun TabLayout(
             containerColor = BlueLight,
             contentColor = Color.White,
             divider = {
-
+                HorizontalDivider()
             }
         ) {
             tabList.forEachIndexed { index, text ->
@@ -219,7 +251,6 @@ fun TabLayout(
                 )
             }
         }
-
         HorizontalPager(
             count = tabList.size,
             state = pageState,
@@ -261,3 +292,79 @@ fun TabLayout(
     }
 }
 
+@Preview
+@Composable
+private fun MainCardPreview() {
+    WeatherComposeTheme {
+        val now = remember {
+            mutableStateOf(
+                now(
+                    "2024-05-12 12:00",
+                    "19",
+                    "25",
+                    "100",
+                    "阴", "", "", "", "", "", "",
+                    "", "", "", ""
+                )
+            )
+        }
+        MainCard(nowList = now, onClickSync = {}, onClickSearch = {})
+    }
+}
+
+@Preview
+@Composable
+private fun TabLayoutPreview() {
+    WeatherComposeTheme {
+        val daysList = remember {
+            mutableStateOf(listOf<daily>())
+        }
+        val hourlyList = remember {
+            mutableStateOf(
+                listOf(
+                    hourly(
+                        "2014-12-14",
+                        "23",
+                        "100",
+                        "晴",
+                        "25",
+                        "sade",
+                        "aekae",
+                        "15"
+                    ),
+                    hourly(
+                        "2014-12-14",
+                        "23",
+                        "100",
+                        "晴",
+                        "25",
+                        "sade",
+                        "aekae",
+                        "15"
+                    ),
+                    hourly(
+                        "2014-12-14",
+                        "23",
+                        "100",
+                        "晴",
+                        "25",
+                        "sade",
+                        "aekae",
+                        "15"
+                    ),
+                    hourly(
+                        "2014-12-14",
+                        "23",
+                        "100",
+                        "晴",
+                        "25",
+                        "sade",
+                        "aekae",
+                        "15"
+                    ),
+                )
+            )
+        }
+        TabLayout(daysList = daysList, hourlyList = hourlyList)
+    }
+}
