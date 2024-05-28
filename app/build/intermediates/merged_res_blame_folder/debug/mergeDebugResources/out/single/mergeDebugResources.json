@@ -1,11 +1,19 @@
 [
     {
+        "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_sun_bg.jpg.flat",
+        "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/sun_bg.jpg"
+    },
+    {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/mipmap-anydpi_ic_launcher.xml.flat",
         "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/mipmap-anydpi/ic_launcher.xml"
     },
     {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_night_bg.png.flat",
         "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/night_bg.png"
+    },
+    {
+        "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_rain_bg.jpg.flat",
+        "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/rain_bg.jpg"
     },
     {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -44,8 +52,12 @@
         "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/cloudy_bg.png"
     },
     {
-        "merged": "com.example.weathercompose.app-debug-61:/drawable_baseline_location.xml.flat",
-        "source": "com.example.weathercompose.app-main-63:/drawable/baseline_location.xml"
+        "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_baseline_location.xml.flat",
+        "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/baseline_location.xml"
+    },
+    {
+        "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_duyun.jpg.flat",
+        "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/drawable/duyun.jpg"
     },
     {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_sunny_bg.png.flat",
@@ -62,6 +74,10 @@
     {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-main-63:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.weathercompose.app-debug-61:/drawable_ying_bg.jpg.flat",
+        "source": "com.example.weathercompose.app-main-63:/drawable/ying_bg.jpg"
     },
     {
         "merged": "/media/bobowg/learn/Android/Gradle/daemon/8.4/com.example.weathercompose.app-debug-61:/drawable_snow_bg.png.flat",

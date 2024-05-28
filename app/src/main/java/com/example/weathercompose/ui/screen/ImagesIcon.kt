@@ -1,6 +1,5 @@
 package com.example.weathercompose.ui.screen
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -23,7 +22,6 @@ import coil.compose.AsyncImage
 import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import com.example.weathercompose.R
-import com.example.weathercompose.ui.theme.BlueLight
 import com.example.weathercompose.ui.theme.Pink80
 
 @Composable
@@ -40,8 +38,7 @@ fun WeatherSelectIcon(icon: String) {
         contentDescription = null,
         modifier = Modifier
             .size(35.dp)
-            .padding(top = 3.dp, end = 8.dp)
-            .background(color = BlueLight),
+            .padding(top = 3.dp, end = 8.dp),
         filterQuality = DefaultFilterQuality,
         colorFilter = ColorFilter.tint(Pink80),
     )
