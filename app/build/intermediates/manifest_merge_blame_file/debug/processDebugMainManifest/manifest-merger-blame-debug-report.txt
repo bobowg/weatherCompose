@@ -45,7 +45,7 @@
 26-->[androidx.core:core:1.13.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/473afeaae77d6d8a5ae99f2b3eb0659b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 27
 28    <application
-28-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:15:5-48:19
+28-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:15:5-50:19
 29        android:allowBackup="true"
 29-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:16:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,407 +64,410 @@
 37-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:21:9-54
 38        android:supportsRtl="true"
 38-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:22:9-35
-39        android:testOnly="true"
-40        android:theme="@style/Theme.WeatherCompose" >
-40-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:23:9-52
-41        <activity
-41-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:26:9-36:20
-42            android:name="com.example.weathercompose.MainActivity"
-42-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:27:13-41
+39        android:theme="@style/Theme.WeatherCompose" >
+39-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:23:9-52
+40        <activity
+40-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:26:9-38:20
+41            android:name="com.example.weathercompose.MainActivity"
+41-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:27:13-41
+42            android:configChanges="orientation"
+42-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:31:13-48
 43            android:exported="true"
 43-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:28:13-36
 44            android:label="@string/app_name"
-44-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:29:13-45
-45            android:theme="@style/Theme.WeatherCompose" >
-45-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:30:13-56
-46            <intent-filter>
-46-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:31:13-35:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:17-69
-47-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:17-77
-49-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:27-74
-50            </intent-filter>
-51        </activity>
-52
-53        <receiver
-53-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:37:9-46:20
-54            android:name="com.example.weathercompose.ui.widget.WeatherWidgetReceiver"
-54-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:38:13-60
-55            android:exported="true" >
-55-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:39:13-36
-56            <intent-filter>
-56-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:40:13-42:29
-57                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-57-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:41:17-84
-57-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:41:25-81
-58            </intent-filter>
-59
-60            <meta-data
-60-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:43:13-45:62
-61                android:name="android.appwidget.provider"
-61-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:44:17-58
-62                android:resource="@xml/my_app_widget_info" />
-62-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:45:17-59
-63        </receiver>
-64
-65        <activity
-65-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:23:9-27:40
-66            android:name="androidx.glance.appwidget.action.ActionTrampolineActivity"
-66-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:24:13-85
-67            android:enabled="true"
-67-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:25:13-35
-68            android:excludeFromRecents="true"
-68-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:26:13-46
-69            android:exported="false" />
-69-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:27:13-37
-70        <activity
-70-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:28:9-35:81
-71            android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity"
-71-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:29:13-94
-72            android:enabled="true"
-72-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:30:13-35
-73            android:exported="false"
-73-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:31:13-37
-74            android:launchMode="singleInstance"
-74-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:32:13-48
-75            android:noHistory="true"
-75-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:33:13-37
-76            android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline"
-76-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:34:13-91
-77            android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline" />
-77-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:35:13-78
-78
-79        <receiver
-79-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:37:9-40:40
-80            android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"
-80-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:38:13-92
-81            android:enabled="true"
-81-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:39:13-35
-82            android:exported="false" />
-82-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:40:13-37
-83        <receiver
-83-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:41:9-48:20
-84            android:name="androidx.glance.appwidget.MyPackageReplacedReceiver"
-84-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:42:13-79
-85            android:enabled="true"
-85-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:43:13-35
-86            android:exported="false" >
-86-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:44:13-37
-87            <intent-filter>
-87-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:45:13-47:29
-88                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-88-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:46:17-84
-88-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:46:25-81
-89            </intent-filter>
-90        </receiver>
-91
-92        <service
-92-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:50:9-53:72
-93            android:name="androidx.glance.appwidget.GlanceRemoteViewsService"
-93-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:51:13-78
-94            android:exported="true"
-94-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:52:13-36
-95            android:permission="android.permission.BIND_REMOTEVIEWS" />
-95-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:53:13-69
-96        <service
-96-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:24:9-27:63
-97            android:name="androidx.core.widget.RemoteViewsCompatService"
-97-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:25:13-73
-98            android:permission="android.permission.BIND_REMOTEVIEWS" />
-98-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:26:13-69
-99
-100        <activity
-100-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
-101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-101-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
-102            android:exported="false"
-102-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
-103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-103-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
-104
-105        <meta-data
-105-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
-106            android:name="com.google.android.gms.version"
-106-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
-107            android:value="@integer/google_play_services_version" />
-107-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
-108
-109        <activity
-109-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:23:9-25:39
-110            android:name="androidx.activity.ComponentActivity"
-110-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:24:13-63
-111            android:exported="true" />
-111-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:25:13-36
-112        <activity
-112-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
-113            android:name="androidx.compose.ui.tooling.PreviewActivity"
-113-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
-114            android:exported="true" />
-114-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
-115
-116        <provider
-116-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
-117            android:name="androidx.startup.InitializationProvider"
-117-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
-118            android:authorities="com.example.weathercompose.androidx-startup"
-118-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
-119            android:exported="false" >
-119-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
-120            <meta-data
-120-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
-121                android:name="androidx.work.WorkManagerInitializer"
-121-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
-122                android:value="androidx.startup" />
-122-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
-123            <meta-data
-123-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-124                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-124-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-125                android:value="androidx.startup" />
-125-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-126            <meta-data
-126-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-127-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-128                android:value="androidx.startup" />
-128-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-129            <meta-data
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-131                android:value="androidx.startup" />
-131-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-132        </provider>
-133
-134        <service
-134-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
-135            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-135-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
-136            android:directBootAware="false"
-136-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
-137            android:enabled="@bool/enable_system_alarm_service_default"
-137-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
-138            android:exported="false" />
-138-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
-139        <service
-139-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
-140            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-140-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
-141            android:directBootAware="false"
-141-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
-142            android:enabled="@bool/enable_system_job_service_default"
-142-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
-143            android:exported="true"
-143-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
-144            android:permission="android.permission.BIND_JOB_SERVICE" />
-144-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
-145        <service
-145-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
-146            android:name="androidx.work.impl.foreground.SystemForegroundService"
-146-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
-147            android:directBootAware="false"
-147-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
-148            android:enabled="@bool/enable_system_foreground_service_default"
-148-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
-149            android:exported="false" />
-149-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
-150
-151        <receiver
-151-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
-152            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-152-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
-153            android:directBootAware="false"
-153-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
-154            android:enabled="true"
-154-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
-155            android:exported="false" />
-155-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
-156        <receiver
-156-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
-157            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-157-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
-158            android:directBootAware="false"
-158-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
-159            android:enabled="false"
-159-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
-160            android:exported="false" >
-160-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
-161            <intent-filter>
-161-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
-162                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-162-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
-162-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
-163                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-163-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
-163-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
-164            </intent-filter>
-165        </receiver>
-166        <receiver
-166-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
-167            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-167-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
-168            android:directBootAware="false"
-168-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
-169            android:enabled="false"
-169-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
-170            android:exported="false" >
-170-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
-171            <intent-filter>
-171-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
-172                <action android:name="android.intent.action.BATTERY_OKAY" />
-172-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
-172-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
-173                <action android:name="android.intent.action.BATTERY_LOW" />
-173-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
-173-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
-174            </intent-filter>
-175        </receiver>
-176        <receiver
-176-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
-177            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-177-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
-178            android:directBootAware="false"
-178-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
-179            android:enabled="false"
-179-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
-180            android:exported="false" >
-180-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
-181            <intent-filter>
-181-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
-182                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-182-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
-182-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
-183                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-183-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
-183-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
-184            </intent-filter>
-185        </receiver>
-186        <receiver
-186-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
-187            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-187-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
-188            android:directBootAware="false"
-188-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
-189            android:enabled="false"
-189-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
-190            android:exported="false" >
-190-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
-191            <intent-filter>
-191-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
-192                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-192-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
-192-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
-193            </intent-filter>
-194        </receiver>
-195        <receiver
-195-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
-196            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-196-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
-197            android:directBootAware="false"
-197-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
-198            android:enabled="false"
-198-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
-199            android:exported="false" >
-199-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
-200            <intent-filter>
-200-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
-201                <action android:name="android.intent.action.BOOT_COMPLETED" />
-201-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
-201-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
-202                <action android:name="android.intent.action.TIME_SET" />
-202-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
-202-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
-203                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-203-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
-203-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
-204            </intent-filter>
-205        </receiver>
-206        <receiver
-206-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
-207            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-207-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
-208            android:directBootAware="false"
-208-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
-209            android:enabled="@bool/enable_system_alarm_service_default"
-209-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
-210            android:exported="false" >
-210-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
-211            <intent-filter>
-211-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
-212                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-212-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
-212-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
-213            </intent-filter>
-214        </receiver>
-215        <receiver
-215-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
-216            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-216-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
-217            android:directBootAware="false"
-217-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
-218            android:enabled="true"
-218-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
-219            android:exported="true"
-219-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
-220            android:permission="android.permission.DUMP" >
-220-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
-221            <intent-filter>
-221-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
-222                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-222-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
-222-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
-223            </intent-filter>
-224        </receiver>
-225
-226        <service
-226-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-227            android:name="androidx.room.MultiInstanceInvalidationService"
-227-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-228            android:directBootAware="true"
-228-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-229            android:exported="false" />
-229-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-230
-231        <receiver
-231-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-232            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-232-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-233            android:directBootAware="false"
-233-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-234            android:enabled="true"
-234-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-235            android:exported="true"
-235-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-236            android:permission="android.permission.DUMP" >
-236-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-237            <intent-filter>
-237-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-238                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-238-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-238-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-239            </intent-filter>
-240            <intent-filter>
-240-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-241                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-241-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-241-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-242            </intent-filter>
-243            <intent-filter>
-243-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-244                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-244-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-244-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-245            </intent-filter>
-246            <intent-filter>
-246-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-247                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-247-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-247-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-248            </intent-filter>
-249        </receiver>
-250    </application>
-251
-252</manifest>
+44-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:30:13-45
+45            android:screenOrientation="portrait"
+45-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:29:13-49
+46            android:theme="@style/Theme.WeatherCompose" >
+46-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:32:13-56
+47            <intent-filter>
+47-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:33:13-37:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:17-69
+48-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:34:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:36:17-77
+50-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:36:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <receiver
+54-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:39:9-48:20
+55            android:name="com.example.weathercompose.ui.widget.WeatherWidgetReceiver"
+55-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:40:13-60
+56            android:exported="true" >
+56-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:41:13-36
+57            <intent-filter>
+57-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:42:13-44:29
+58                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+58-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:43:17-84
+58-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:43:25-81
+59            </intent-filter>
+60
+61            <meta-data
+61-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:45:13-47:62
+62                android:name="android.appwidget.provider"
+62-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:46:17-58
+63                android:resource="@xml/my_app_widget_info" />
+63-->/media/bobowg/learn/Project/weatherCompose/app/src/main/AndroidManifest.xml:47:17-59
+64        </receiver>
+65
+66        <activity
+66-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:23:9-27:40
+67            android:name="androidx.glance.appwidget.action.ActionTrampolineActivity"
+67-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:24:13-85
+68            android:enabled="true"
+68-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:25:13-35
+69            android:excludeFromRecents="true"
+69-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:26:13-46
+70            android:exported="false" />
+70-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:27:13-37
+71        <activity
+71-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:28:9-35:81
+72            android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity"
+72-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:29:13-94
+73            android:enabled="true"
+73-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:30:13-35
+74            android:exported="false"
+74-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:31:13-37
+75            android:launchMode="singleInstance"
+75-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:32:13-48
+76            android:noHistory="true"
+76-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:33:13-37
+77            android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline"
+77-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:34:13-91
+78            android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline" />
+78-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:35:13-78
+79
+80        <receiver
+80-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:37:9-40:40
+81            android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"
+81-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:38:13-92
+82            android:enabled="true"
+82-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:39:13-35
+83            android:exported="false" />
+83-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:40:13-37
+84        <receiver
+84-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:41:9-48:20
+85            android:name="androidx.glance.appwidget.MyPackageReplacedReceiver"
+85-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:42:13-79
+86            android:enabled="true"
+86-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:43:13-35
+87            android:exported="false" >
+87-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:44:13-37
+88            <intent-filter>
+88-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:45:13-47:29
+89                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+89-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:46:17-84
+89-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:46:25-81
+90            </intent-filter>
+91        </receiver>
+92
+93        <service
+93-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:50:9-53:72
+94            android:name="androidx.glance.appwidget.GlanceRemoteViewsService"
+94-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:51:13-78
+95            android:exported="true"
+95-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:52:13-36
+96            android:permission="android.permission.BIND_REMOTEVIEWS" />
+96-->[androidx.glance:glance-appwidget:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/d5507c3afd62e0b6f2ad50bf616b7c01/transformed/glance-appwidget-1.0.0/AndroidManifest.xml:53:13-69
+97        <service
+97-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:24:9-27:63
+98            android:name="androidx.core.widget.RemoteViewsCompatService"
+98-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:25:13-73
+99            android:permission="android.permission.BIND_REMOTEVIEWS" />
+99-->[androidx.core:core-remoteviews:1.0.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/a0353bacb903b51a14b8591ef18ca773/transformed/core-remoteviews-1.0.0/AndroidManifest.xml:26:13-69
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/5759e92674a422e235f704f99b9905d6/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+105
+106        <meta-data
+106-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+107            android:name="com.google.android.gms.version"
+107-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+108            android:value="@integer/google_play_services_version" />
+108-->[com.google.android.gms:play-services-basement:18.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/44c0ea2675c5ab304b0d312fa3fb78b5/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+109
+110        <activity
+110-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:23:9-25:39
+111            android:name="androidx.activity.ComponentActivity"
+111-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:24:13-63
+112            android:exported="true" />
+112-->[androidx.compose.ui:ui-test-manifest:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/f036cb2ebb5de4980f06902b11ee86f7/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:25:13-36
+113        <activity
+113-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+114            android:name="androidx.compose.ui.tooling.PreviewActivity"
+114-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+115            android:exported="true" />
+115-->[androidx.compose.ui:ui-tooling-android:1.6.7] /media/bobowg/learn/Android/Gradle/caches/transforms-3/6d16f0dbb38fef9797622d8caf7841f6/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+116
+117        <provider
+117-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+118            android:name="androidx.startup.InitializationProvider"
+118-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+119            android:authorities="com.example.weathercompose.androidx-startup"
+119-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+120            android:exported="false" >
+120-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+121            <meta-data
+121-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+122                android:name="androidx.work.WorkManagerInitializer"
+122-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+123                android:value="androidx.startup" />
+123-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+124            <meta-data
+124-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+125-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+126                android:value="androidx.startup" />
+126-->[androidx.emoji2:emoji2:1.3.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/56eb21cc3facd2cc64fcb44582b047b2/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] /media/bobowg/learn/Android/Gradle/caches/transforms-3/4a4dd24630090b6f44f02f929a855f53/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+132                android:value="androidx.startup" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+133        </provider>
+134
+135        <service
+135-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+136            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+136-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+137            android:directBootAware="false"
+137-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+138            android:enabled="@bool/enable_system_alarm_service_default"
+138-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+139            android:exported="false" />
+139-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+140        <service
+140-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+141            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+141-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+142            android:directBootAware="false"
+142-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+143            android:enabled="@bool/enable_system_job_service_default"
+143-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+144            android:exported="true"
+144-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+145            android:permission="android.permission.BIND_JOB_SERVICE" />
+145-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+146        <service
+146-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+147            android:name="androidx.work.impl.foreground.SystemForegroundService"
+147-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+148            android:directBootAware="false"
+148-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+149            android:enabled="@bool/enable_system_foreground_service_default"
+149-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+150            android:exported="false" />
+150-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+151
+152        <receiver
+152-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+153            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+153-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+154            android:directBootAware="false"
+154-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+155            android:enabled="true"
+155-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+156            android:exported="false" />
+156-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+157        <receiver
+157-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+158            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+158-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+160            android:enabled="false"
+160-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+161            android:exported="false" >
+161-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+162            <intent-filter>
+162-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+163                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+163-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+163-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+164                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+164-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+164-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+165            </intent-filter>
+166        </receiver>
+167        <receiver
+167-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+168            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+168-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+169            android:directBootAware="false"
+169-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+170            android:enabled="false"
+170-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+171            android:exported="false" >
+171-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+172            <intent-filter>
+172-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+173                <action android:name="android.intent.action.BATTERY_OKAY" />
+173-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+173-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+174                <action android:name="android.intent.action.BATTERY_LOW" />
+174-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+174-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+175            </intent-filter>
+176        </receiver>
+177        <receiver
+177-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+178            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+178-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+179            android:directBootAware="false"
+179-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+180            android:enabled="false"
+180-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+181            android:exported="false" >
+181-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+182            <intent-filter>
+182-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+183                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+183-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+183-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+184                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+184-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+184-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+185            </intent-filter>
+186        </receiver>
+187        <receiver
+187-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+188            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+188-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+190            android:enabled="false"
+190-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+192            <intent-filter>
+192-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+193                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+193-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+193-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+194            </intent-filter>
+195        </receiver>
+196        <receiver
+196-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+197            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+197-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+198            android:directBootAware="false"
+198-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+199            android:enabled="false"
+199-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+200            android:exported="false" >
+200-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+201            <intent-filter>
+201-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+202                <action android:name="android.intent.action.BOOT_COMPLETED" />
+202-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+202-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+203                <action android:name="android.intent.action.TIME_SET" />
+203-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+203-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+204                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+204-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+204-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+208            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+208-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+210            android:enabled="@bool/enable_system_alarm_service_default"
+210-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+212            <intent-filter>
+212-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+213                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+213-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+213-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+214            </intent-filter>
+215        </receiver>
+216        <receiver
+216-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+217            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+217-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+219            android:enabled="true"
+219-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+220            android:exported="true"
+220-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+221            android:permission="android.permission.DUMP" >
+221-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+222            <intent-filter>
+222-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+223                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+223-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+223-->[androidx.work:work-runtime:2.7.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/8a9e97dc205bd4b9038613488de7fa5c/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+224            </intent-filter>
+225        </receiver>
+226
+227        <service
+227-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+228            android:name="androidx.room.MultiInstanceInvalidationService"
+228-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+229            android:directBootAware="true"
+229-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+230            android:exported="false" />
+230-->[androidx.room:room-runtime:2.2.5] /media/bobowg/learn/Android/Gradle/caches/transforms-3/3ecc159eb43c7568477ac3fb896686b8/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+231
+232        <receiver
+232-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+233            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+234            android:directBootAware="false"
+234-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+235            android:enabled="true"
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+236            android:exported="true"
+236-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+237            android:permission="android.permission.DUMP" >
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+238            <intent-filter>
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+239                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+239-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+239-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+240            </intent-filter>
+241            <intent-filter>
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+242                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+243            </intent-filter>
+244            <intent-filter>
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+245                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+246            </intent-filter>
+247            <intent-filter>
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+248                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /media/bobowg/learn/Android/Gradle/caches/transforms-3/7fb1c9a194955266239c9b18be7a68aa/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+249            </intent-filter>
+250        </receiver>
+251    </application>
+252
+253</manifest>

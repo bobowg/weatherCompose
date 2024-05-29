@@ -66,5 +66,4 @@ enum class WeatherIcon(val int: Int) {
     extremely_dense_fog(515),
     hot(900),
     cold(901)
-
 }

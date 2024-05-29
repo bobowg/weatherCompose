@@ -1,6 +1,5 @@
 package com.example.weathercompose.ui.screen
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -36,8 +35,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
@@ -51,7 +48,7 @@ import com.example.weathercompose.data.hourly
 import com.example.weathercompose.data.now
 import com.example.weathercompose.ui.theme.BlueLight
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
-import com.example.weathercompose.uitl.logCard
+import com.example.weathercompose.uitl.ImageCard
 import com.example.weathercompose.uitl.textColor
 import com.example.weathercompose.uitl.toTime
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -82,12 +79,9 @@ fun MainCard(
             shape = RoundedCornerShape(10.dp)
         ) {
             Box(modifier = Modifier.height(320.dp)) {
-                Image(
-                    painter = painterResource(id = logCard(nowList.value.text)),
-                    contentDescription = stringResource(id = R.string.app_name),
-                    modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
-                )
+                if (nowList.value.text!=""){
+                    ImageCard(text = nowList.value.icon)
+                }
                 //拉渐变
                 Box(
                     modifier = Modifier
@@ -227,7 +221,8 @@ fun TabLayout(
     Column(
         modifier = Modifier
             .padding(start = 5.dp, end = 5.dp)
-            .clip(RoundedCornerShape(5.dp)).alpha(0.8f),
+            .clip(RoundedCornerShape(5.dp))
+            .alpha(0.8f),
     ) {
         PrimaryTabRow(
             modifier = Modifier
@@ -303,7 +298,7 @@ private fun MainCardPreview() {
                     "19",
                     "25",
                     "100",
-                    "阴", "", "", "", "", "", "",
+                    "晴", "", "", "", "", "", "",
                     "", "", "", ""
                 )
             )
